@@ -6,7 +6,11 @@
 body {
     margin-top: 0;
 }
-/* <header> */
+/*** <header> ***/
+
+header {
+    margin-bottom: 35px;
+}
 #header-logo-nav {
     display: flex;
     justify-content: space-between;
@@ -34,8 +38,9 @@ body {
     border-top: 2px solid #0065FC;
     color: #0065FC;
 }
-/* </header> */
+/*** <Main> ***/
 
+/* <h1> et <p> */
 h1 {
     font-weight: 700;
     font-size: 22px;
@@ -46,9 +51,7 @@ h1 {
     margin-top: 8px;
 }
 
-#barre-recherche {
-    width: 40%;
-}
+/* Barre de recherche */
 form {
     display: flex;
 }
@@ -72,6 +75,7 @@ form {
     border: 1px solid #F2F2F2;
     border-left: 0;
     border-right: 0;
+    font-size: 18px;
 }
 
 #icone-recherche {
@@ -85,7 +89,80 @@ form {
     color: white;
     background-color: #0065FC;
     font-weight: 700;
-    
+    font-size: 18px;
+}
+#barre-recherche {
+    margin-bottom: 35px;
+}
+
+/* Section Filtres */
+
+#section-filtres {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    height: 50px;
+    margin-bottom: 35px;
+}
+
+#section-filtres > h2 {
+    font-size: 18px;
+    text-align: center;
+    align-self: center;
+}
+
+#boutons-filtres {
+    display: flex;
+    gap: 15px;
+}
+
+h2, .mot {
+    font-weight: 700;
+}
+
+#boutons-filtres > button {
+    background-color: white;
+}
+#boutons-filtres > button:hover {
+    background-color: #DEEBFF;
+}
+.filtre {
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    font-size: 17px;
+}
+
+.filtre > .fa-solid {
+    padding-left: 10px;
+}
+.mot {
+    display: inline-block;
+    padding: 10px;
+}
+
+.barre-info {
+   display: flex;
+   gap: 10px;
+}
+
+.barre-info > i {
+    border: 1px solid #D9D9D9;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.barre-info > p {
+    height: 24px;
+    margin-top: 0;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 :root {
     --main-color: #0065FC;
