@@ -351,7 +351,6 @@ a {
 /** Section Activités **/
 
 .activites {
-    border: 1px solid blue;
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -359,13 +358,16 @@ a {
 }
 
 .activites-cards {
-    border: 1px solid green;
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
+
+.activites-cards a {
+    flex-basis: 0;
+    flex-grow: 1;
+}
 .activites-cards figure {
-    border: 1px solid yellow;
     height: 439px;
     display: flex;
     flex-direction: column;
@@ -373,36 +375,28 @@ a {
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
 }
 .activites-cards img {
-    border: 1px solid red;
     border-radius: 20px 20px 0 0;
     height: 380px;
     object-fit: cover;
     width: 100%;
 }
 .activites h2 {
-    border: 1px solid brown;
-    margin: 0;
-}
-figcaption .card-title {
-    border: 1px solid purple;
     margin: 0;
 }
 
 figcaption {
-    border: 1px solid lightcoral;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     justify-content: center;
-    align-items: flex-start;
-    gap: 10px;
-    align-self: stretch;
-    padding: 20px 19px;
+    padding-left: 19px;
+    padding-right: 19px;
 }
 
 /***** Footer *****/
 
 footer {
-    margin-top: 60px;
+    margin-top: 35px;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
