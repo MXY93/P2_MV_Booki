@@ -18,47 +18,73 @@
 <body>
     <div class="main-container">
             <header>
-                <nav id="header-logo-nav">
-                    <a href="#"><img id="logo-booki" src="./images/logo/Booki.png" alt="logo"></a>
-                    <ul id="barre-navigation">
-                        <li class="bouton-nav"><a href="#">Hébergements</a></li>
-                        <li class="bouton-nav"><a href="#">Activités</a></li>
-                    </ul>  
+                <nav class="header-container">
+                    <a href="#"><img class="header-logo" src="./images/logo/Booki.png" alt="logo"></a>
+                    <ul class="header__nav-bar">
+                        <li class="header__nav-bar__nav-button"><a href="#">Hébergements</a></li>
+                        <li class="header__nav-bar__nav-button"><a href="#">Activités</a></li>
+                    </ul>
                 </nav>
             </header>
             <main>
-                <div id="info-group">
-                    <div id="headline">
+                <div class="info-group">
+                    <section class="headline">
                         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                        <p id="prg-h1">En plein centre-ville ou en pleine nature</p>
-                    </div>
-                    <div id="barre-recherche">
+                        <p class="headline__prg">En plein centre-ville ou en pleine nature</p>
+                    </section>
+                    <div class="search-bar">
                         <form action="#" method="post">
-                            <label for="location-city" class="location"><i id="icone-location" class="fa-solid fa-location-dot" aria-hidden="true"></i></label>
+                            <label for="location-city" class="search-bar__location">
+                                <i class="location-icon fa-solid fa-location-dot" aria-hidden="true"></i>
+                            </label>
                             <input type="text" name="city" id="location-city" value="Marseille, France">
-                            <button id="bouton-recherche"><i id="icone-recherche" class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><span id="bouton-recherche-mot">Rechercher</span></button>
+                            <button class="search-bar__search-button">
+                                <i id="search-button__icon" class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                                <span class="search-bar__search-button-text">Rechercher</span>
+                            </button>
                         </form>
                     </div>
-                    <section id="section-filtres">
-                        <h2>Filtres</h2>
-                        <div id="boutons-filtres">
-                            <button class="filtre"><span class="bouton-filtre-icone"><i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i></span><span class="mot">Économique</span></button>
-                            <button class="filtre"><span class="bouton-filtre-icone"><i class="fa-solid fa-person" aria-hidden="true"></i></span><span class="mot">Familial</span></button>
-                            <button class="filtre"><span class="bouton-filtre-icone"><i class="fa-solid fa-heart" aria-hidden="true"></i></span><span class="mot">Romantique</span></button>
-                            <button class="filtre"><span class="bouton-filtre-icone"><i class="fa-solid fa-fire" aria-hidden="true"></i></span><span class="mot">Nos pépites</span></button>
+                    <section class="filters-section">
+                        <h2 class="filters-section__title">Filtres</h2>
+                        <div class="filters-section__filters-buttons">
+                            <button class="filter-button">
+                                <span class="filter-button__icon-container">
+                                    <i class="filter-button__icon fa-solid fa-money-bill-wave" aria-hidden="true"></i>
+                                </span>
+                                <span class="filter-button_text">Économique</span>
+                            </button>
+                            <button class="filter-button">
+                                <span class="filter-button__icon-container">
+                                    <i class="filter-button__icon fa-solid fa-person" aria-hidden="true"></i>
+                                </span>
+                                <span class="filter-button_text">Familial</span>
+                            </button>
+                            <button class="filter-button">
+                                <span class="filter-button__icon-container">
+                                    <i class="filter-button__icon fa-solid fa-heart" aria-hidden="true"></i>
+                                </span>
+                                <span class="filter-button_text">Romantique</span>
+                            </button>
+                            <button class="filter-button">
+                                <span class="filter-button__icon-container">
+                                    <i class="filter-button__icon fa-solid fa-fire" aria-hidden="true"></i>
+                                </span>
+                                <span class="filter-button_text">Nos pépites</span>
+                            </button>
                             </div>
                     </section>
-                    <div class="barre-info">
-                        <i class="fa-solid fa-info" aria-hidden="true"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    <div class="info-bar">
+                        <i class="fa-solid fa-info" aria-hidden="true"></i>
+                        <p class="info-bar__text">Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
                 </div>
-            <div class="hebergements-and-populaires">
-                <section class="hebergements">
+            <div class="lodging-and-populars">
+                <section class="lodging">
                     <h2 class="section-title">Hébergements à Marseille</h2>
-                    <div class="hebergements-cards">
-                        <div class="hebergements-cards-bloc">
+                    <div class="lodging-cards__container">
+                        <div class="lodging-cards__bloc">
                             <a href="#">
-                                <article class="card card-bloc-hebergement">
+                                <article class="card lodging-cards__bloc__card">
                                     <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
                                         <h3 class="card-title">Hôtel du port</h3>
@@ -74,7 +100,7 @@
                                 </article>
                             </a>
                             <a href="#">
-                                <article class="card card-bloc-hebergement">
+                                <article class="card lodging-cards__bloc__card">
                                     <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
                                         <h3 class="card-title">Hôtel Chez Amina</h3>
@@ -90,7 +116,7 @@
                                 </article>
                             </a>
                             <a href="#">
-                                <article class="card card-bloc-hebergement">
+                                <article class="card lodging-cards__bloc__card">
                                     <img src="./images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
                                         <h3 class="card-title">Hôtel Les mouettes</h3>
@@ -106,9 +132,9 @@
                                 </article>
                             </a>
                         </div>
-                        <div class="hebergements-cards-bloc">
+                        <div class="lodging-cards__bloc">
                             <a href="#">
-                                <article class="card card-bloc-hebergement">
+                                <article class="card lodging-cards__bloc__card">
                                     <img src="./images/hebergements/annie-spratt.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
                                         <h3 class="card-title">Hôtel de la mer</h3>
@@ -124,7 +150,7 @@
                                 </article>
                             </a>
                             <a href="#">
-                                <article class="card card-bloc-hebergement">
+                                <article class="card lodging-cards__bloc__card">
                                     <img src="./images/hebergements/marcus-loke.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
                                         <h3 class="card-title">Auberge La Canebière</h3>
@@ -141,7 +167,7 @@
                                 </article>
                             </a>
                             <a href="#">
-                                <article class="card card-bloc-hebergement">
+                                <article class="card lodging-cards__bloc__card">
                                     <img src="./images/hebergements/nicate-lee.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
                                         <h3 class="card-title">Auberge Le Panier</h3>
@@ -158,14 +184,14 @@
                             </a>      
                         </div>    
                     </div>
-                    <a href="#" class="afficher-plus">Afficher plus</a>
+                    <a href="#" class="see-more">Afficher plus</a>
                 </section>
-                <section class="populaires">
-                    <div class="populaires-title">
+                <section class="populars">
+                    <div class="populars-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
-                    <div class="populaires-cards">
+                    <div class="populars-cards">
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -226,9 +252,9 @@
                     </div>
                 </section>
             </div>
-            <section class="activites">
-                <h2>Activités à Marseille</h2>
-                <div class="activites-cards">
+            <section class="activities">
+                <h2 class="section-title">Activités à Marseille</h2>
+                <div class="activities-cards">
                     <a href="#">
                         <figure>
                             <img src="./images/activites/reno-laithienne.jpg" alt="Image montrant le Vieux-Port">
