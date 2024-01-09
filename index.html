@@ -18,11 +18,11 @@
 <body>
     <div class="main-container">
             <header>
-                <nav class="header-container">
-                    <a href="#"><img class="header-logo" src="./images/logo/Booki.png" alt="logo"></a>
+                <nav class="header__container">
+                    <a href="#"><img class="header__logo" src="./images/logo/Booki.png" alt="logo"></a>
                     <ul class="header__nav-bar">
-                        <li class="header__nav-bar__nav-button"><a href="#">Hébergements</a></li>
-                        <li class="header__nav-bar__nav-button"><a href="#">Activités</a></li>
+                        <li class="header__nav-bar__nav-button"><a href="#lodging">Hébergements</a></li>
+                        <li class="header__nav-bar__nav-button"><a href="#activities">Activités</a></li>
                     </ul>
                 </nav>
             </header>
@@ -40,7 +40,7 @@
                             <input type="text" name="city" id="location-city" value="Marseille, France">
                             <button class="search-bar__search-button">
                                 <i id="search-button__icon" class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-                                <span class="search-bar__search-button-text">Rechercher</span>
+                                <span class="search-bar__search-button__text">Rechercher</span>
                             </button>
                         </form>
                     </div>
@@ -51,25 +51,25 @@
                                 <span class="filter-button__icon-container">
                                     <i class="filter-button__icon fa-solid fa-money-bill-wave" aria-hidden="true"></i>
                                 </span>
-                                <span class="filter-button_text">Économique</span>
+                                <span class="filter-button__text">Économique</span>
                             </button>
                             <button class="filter-button">
                                 <span class="filter-button__icon-container">
                                     <i class="filter-button__icon fa-solid fa-person" aria-hidden="true"></i>
                                 </span>
-                                <span class="filter-button_text">Familial</span>
+                                <span class="filter-button__text">Familial</span>
                             </button>
                             <button class="filter-button">
                                 <span class="filter-button__icon-container">
                                     <i class="filter-button__icon fa-solid fa-heart" aria-hidden="true"></i>
                                 </span>
-                                <span class="filter-button_text">Romantique</span>
+                                <span class="filter-button__text">Romantique</span>
                             </button>
                             <button class="filter-button">
                                 <span class="filter-button__icon-container">
                                     <i class="filter-button__icon fa-solid fa-fire" aria-hidden="true"></i>
                                 </span>
-                                <span class="filter-button_text">Nos pépites</span>
+                                <span class="filter-button__text">Nos pépites</span>
                             </button>
                             </div>
                     </section>
@@ -80,7 +80,7 @@
                 </div>
             <div class="lodging-and-populars">
                 <section class="lodging">
-                    <h2 class="section-title">Hébergements à Marseille</h2>
+                    <h2 id="lodging" class="section-title">Hébergements à Marseille</h2>
                     <div class="lodging-cards__container">
                         <div class="lodging-cards__bloc">
                             <a href="#">
@@ -253,7 +253,7 @@
                 </section>
             </div>
             <section class="activities">
-                <h2 class="section-title">Activités à Marseille</h2>
+                <h2 id="activities" class="section-title">Activités à Marseille</h2>
                 <div class="activities-cards">
                     <a href="#">
                         <figure>
